@@ -33,7 +33,7 @@ module.exports = {
       chunkModules: false
     }
   },
-  devtool: 'sourcemap',
+  devtool: 'source-map',
   entry: {
     app: [
       'reflect-metadata',
@@ -89,9 +89,7 @@ module.exports = {
     ]
   },
   node: {
-    fs: 'empty',
     global: true,
-    crypto: 'empty'
   },
   plugins: [
     new webpack.DllReferencePlugin({
